@@ -14,8 +14,8 @@ namespace AdventOfCode
             SampleFileContent = File.ReadAllLines($"{GetType().Name}/sample.txt");
         }
 
-        protected abstract int Part1SampleResult { get; }
-        protected abstract int SolvePart1(string[] input);
+        protected abstract long Part1SampleResult { get; }
+        protected abstract long SolvePart1(string[] input);
         public void Part1()
         {
             var sampleResult = SolvePart1(SampleFileContent);
@@ -28,14 +28,14 @@ namespace AdventOfCode
             Console.WriteLine($"{GetType().Name} Part1 : {result}");
         }
 
-        protected abstract int Part2SampleResult { get; }
-        protected abstract int SolvePart2(string[] input);
+        protected abstract long Part2SampleResult { get; }
+        protected abstract long SolvePart2(string[] input);
         public void Part2()
         {
             var sampleResult = SolvePart2(SampleFileContent);
             if (sampleResult != Part2SampleResult)
             {
-                throw new InvalidOperationException($"Bad Result for Part1 {sampleResult} was expecting {Part2SampleResult}");
+                throw new InvalidOperationException($"Bad Result for Part2 {sampleResult} was expecting {Part2SampleResult}");
             }
 
             var result = SolvePart2(InputFileContent);

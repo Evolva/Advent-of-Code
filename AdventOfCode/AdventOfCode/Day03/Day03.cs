@@ -1,15 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace AdventOfCode.Day03
 {
     public class Day03 : AdventCalendarSolver
     {
-        protected override int Part1SampleResult => 198;
+        protected override long Part1SampleResult => 198;
 
-        protected override int SolvePart1(string[] input)
+        protected override long SolvePart1(string[] input)
         {
             var numberOfNumbers = input.Length;
             var numberLength = input[0].Length;
@@ -36,9 +34,9 @@ namespace AdventOfCode.Day03
         }
 
 
-        protected override int Part2SampleResult => 230;
+        protected override long Part2SampleResult => 230;
 
-        protected override int SolvePart2(string[] input)
+        protected override long SolvePart2(string[] input)
         {
             return GetOxygenRating(input) * GetC02Rating(input);
         }

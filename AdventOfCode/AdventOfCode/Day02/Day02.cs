@@ -78,9 +78,9 @@ namespace AdventOfCode.Day02
 
     public class Day02 : AdventCalendarSolver
     {
-        protected override int Part1SampleResult => 150;
+        protected override long Part1SampleResult => 150;
 
-        protected override int SolvePart1(string[] input)
+        protected override long SolvePart1(string[] input)
         {
             var finalPosition = input
                 .Select(s =>
@@ -105,8 +105,8 @@ namespace AdventOfCode.Day02
         }
 
 
-        protected override int Part2SampleResult => 900;
-        protected override int SolvePart2(string[] input)
+        protected override long Part2SampleResult => 900;
+        protected override long SolvePart2(string[] input)
         {
             var finalPosition = input
                 .Select(s =>

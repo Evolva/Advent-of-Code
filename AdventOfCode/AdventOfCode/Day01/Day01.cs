@@ -5,8 +5,8 @@ namespace AdventOfCode.Day01
 {
     public class Day01 : AdventCalendarSolver
     {
-        protected override int Part1SampleResult => 7;
-        protected override int SolvePart1(string[] input)
+        protected override long Part1SampleResult => 7;
+        protected override long SolvePart1(string[] input)
         {
             return input
                 .Select(int.Parse)
@@ -16,8 +16,8 @@ namespace AdventOfCode.Day01
         }
 
 
-        protected override int Part2SampleResult => 5;
-        protected override int SolvePart2(string[] input)
+        protected override long Part2SampleResult => 5;
+        protected override long SolvePart2(string[] input)
         {
             return input
                 .Select(int.Parse)

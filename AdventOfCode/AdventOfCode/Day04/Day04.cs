@@ -116,14 +116,14 @@ namespace AdventOfCode.Day04
 
     public class Day04 : AdventCalendarSolver
     {
-        protected override int Part1SampleResult => 4512;
-        protected override int SolvePart1(string[] input)
+        protected override long Part1SampleResult => 4512;
+        protected override long SolvePart1(string[] input)
         {
             return new BingoGame(input).Play();
         }
 
-        protected override int Part2SampleResult => 1924;
-        protected override int SolvePart2(string[] input)
+        protected override long Part2SampleResult => 1924;
+        protected override long SolvePart2(string[] input)
         {
             return new BingoGame(input).PlayToLose();
         }
