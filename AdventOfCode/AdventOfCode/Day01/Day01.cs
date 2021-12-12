@@ -5,20 +5,21 @@ namespace AdventOfCode.Day01
 {
     public class Day01 : AdventCalendarSolver
     {
-        public Day01() : base("Day01/input.txt") { }
-
-        protected override int SolvePart1()
+        protected override int Part1SampleResult => 7;
+        protected override int SolvePart1(string[] input)
         {
-            return FileContent
+            return input
                 .Select(int.Parse)
                 .Pairwise()
                 .Where(pair => pair.Item1 < pair.Item2)
                 .Count();
         }
 
-        protected override int SolvePart2()
+
+        protected override int Part2SampleResult => 5;
+        protected override int SolvePart2(string[] input)
         {
-            return FileContent
+            return input
                 .Select(int.Parse)
                 .SlidingWindow(3)
                 .Pairwise()

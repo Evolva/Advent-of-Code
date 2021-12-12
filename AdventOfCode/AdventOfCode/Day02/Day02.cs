@@ -78,11 +78,11 @@ namespace AdventOfCode.Day02
 
     public class Day02 : AdventCalendarSolver
     {
-        public Day02() : base("Day02/input.txt") { }
+        protected override int Part1SampleResult => 150;
 
-        protected override int SolvePart1()
+        protected override int SolvePart1(string[] input)
         {
-            var finalPosition = FileContent
+            var finalPosition = input
                 .Select(s =>
                 {
                     var token = s.Split();
@@ -105,9 +105,10 @@ namespace AdventOfCode.Day02
         }
 
 
-        protected override int SolvePart2()
+        protected override int Part2SampleResult => 900;
+        protected override int SolvePart2(string[] input)
         {
-            var finalPosition = FileContent
+            var finalPosition = input
                 .Select(s =>
                 {
                     var token = s.Split();

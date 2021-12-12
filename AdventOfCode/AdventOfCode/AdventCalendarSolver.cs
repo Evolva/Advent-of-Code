@@ -5,25 +5,41 @@ namespace AdventOfCode
 {
     public abstract class AdventCalendarSolver
     {
-        protected readonly string[] FileContent;
+        private readonly string[] InputFileContent;
+        private readonly string[] SampleFileContent;
 
-        protected AdventCalendarSolver(string inputFilePath)
+        protected AdventCalendarSolver()
         {
-            FileContent = File.ReadAllLines(inputFilePath);
+            InputFileContent = File.ReadAllLines($"{GetType().Name}/input.txt");
+            SampleFileContent = File.ReadAllLines($"{GetType().Name}/sample.txt");
         }
 
-        protected abstract int SolvePart1();
+        protected abstract int Part1SampleResult { get; }
+        protected abstract int SolvePart1(string[] input);
         public void Part1()
         {
-            var result = SolvePart1();
-            Console.WriteLine($"{GetType().Name} {nameof(Part1)} : {result}");
+            var sampleResult = SolvePart1(SampleFileContent);
+            if (sampleResult != Part1SampleResult)
+            {
+                throw new InvalidOperationException($"Bad Result for Part1 {sampleResult} was expecting {Part1SampleResult}");
+            }
+
+            var result = SolvePart1(InputFileContent);
+            Console.WriteLine($"{GetType().Name} Part1 : {result}");
         }
 
-        protected abstract int SolvePart2();
+        protected abstract int Part2SampleResult { get; }
+        protected abstract int SolvePart2(string[] input);
         public void Part2()
         {
-            var result = SolvePart2();
-            Console.WriteLine($"{GetType().Name} {nameof(Part2)} : {result}");
+            var sampleResult = SolvePart2(SampleFileContent);
+            if (sampleResult != Part2SampleResult)
+            {
+                throw new InvalidOperationException($"Bad Result for Part1 {sampleResult} was expecting {Part2SampleResult}");
+            }
+
+            var result = SolvePart2(InputFileContent);
+            Console.WriteLine($"{GetType().Name} Part2 : {result}");
         }
     }
 }

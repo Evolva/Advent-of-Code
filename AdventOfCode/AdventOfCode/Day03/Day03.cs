@@ -7,19 +7,19 @@ namespace AdventOfCode.Day03
 {
     public class Day03 : AdventCalendarSolver
     {
-        public Day03() : base("Day03/input.txt") { }
+        protected override int Part1SampleResult => 198;
 
-        protected override int SolvePart1()
+        protected override int SolvePart1(string[] input)
         {
-            var numberOfNumbers = FileContent.Length;
-            var numberLength = FileContent[0].Length;
+            var numberOfNumbers = input.Length;
+            var numberLength = input[0].Length;
 
             var gammaRate = 0;
             var epsilonRate = 0;
 
             for (int i = 0; i < numberLength; i++)
             {
-                var numberOfOne = FileContent.Select(n => n[i]).Count(b => b == '1');
+                var numberOfOne = input.Select(n => n[i]).Count(b => b == '1');
                 var numberOfZero = numberOfNumbers - numberOfOne;
 
                 if (numberOfOne > numberOfZero)
@@ -35,9 +35,12 @@ namespace AdventOfCode.Day03
             return gammaRate * epsilonRate;
         }
 
-        protected override int SolvePart2()
+
+        protected override int Part2SampleResult => 230;
+
+        protected override int SolvePart2(string[] input)
         {
-            return GetOxygenRating(FileContent) * GetC02Rating(FileContent);
+            return GetOxygenRating(input) * GetC02Rating(input);
         }
 
         private int GetOxygenRating(string[] input)

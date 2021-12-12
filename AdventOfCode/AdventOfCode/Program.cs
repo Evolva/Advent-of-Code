@@ -16,7 +16,11 @@ namespace AdventOfCode
                     solver.Part1();
                     solver.Part2();
                 }
-                catch { }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                }
+
                 Console.ReadKey();
             }
         }
