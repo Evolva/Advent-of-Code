@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
 
-namespace AdventOfCode.Day05
+namespace AdventOfCode.Day08
 {
     public class Day08 : AdventCalendarSolver
     {

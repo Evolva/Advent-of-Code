@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
-namespace AdventOfCode.Day05
+namespace AdventOfCode.Day09
 {
     // rewrote another coordinate because I forgot I made one day05
     // I should still install VS2022 and .NET 5+ and use record...

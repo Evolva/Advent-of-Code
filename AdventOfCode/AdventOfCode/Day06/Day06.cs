@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace AdventOfCode.Day05
+namespace AdventOfCode.Day06
 {
     public class Day06 : AdventCalendarSolver
     {
