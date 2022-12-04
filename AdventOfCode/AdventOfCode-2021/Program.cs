@@ -1,0 +1,1 @@
+﻿AdventCalendarRunner.Run(args);
