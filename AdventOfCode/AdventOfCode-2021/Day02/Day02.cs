@@ -73,7 +73,7 @@
         }
     }
 
-    public class Day02 : AdventCalendarSolver
+    public class Day02 : AdventCalendarProblem<long>
     {
         protected override long Part1SampleResult => 150;
 

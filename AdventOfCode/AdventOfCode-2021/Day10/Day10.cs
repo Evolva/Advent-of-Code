@@ -2,7 +2,7 @@
 {
 
 
-    public class Day10 : AdventCalendarSolver
+    public class Day10 : AdventCalendarProblem<long>
     {
         private static char[] OpeningTokens = new[] { '(', '[', '{', '<' };
 

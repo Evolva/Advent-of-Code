@@ -1,6 +1,6 @@
 ﻿namespace AdventOfCode_2021.Day06
 {
-    public class Day06 : AdventCalendarSolver
+    public class Day06 : AdventCalendarProblem<long>
     {
         protected override long Part1SampleResult => 5934;
         protected override long SolvePart1(string[] input)

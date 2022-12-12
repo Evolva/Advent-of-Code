@@ -7,23 +7,18 @@ public static class AdventCalendarRunner
     public static void Run(string[] args)
     {
         var type = Assembly.GetEntryAssembly()!.GetTypes().SingleOrDefault(t => t.Name == args[0]);
-        var instance = Activator.CreateInstance(type);
-        if (instance is AdventCalendarSolver solver)
-        {
-            try
-            {
-                solver.Part1();
-                solver.Part2();
-            }
-            catch (NotImplementedException)
-            {
-                //NOOP
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-            }
 
+        if (type == null)
+        {
+            Console.WriteLine($"Unable to find type '{args[0]}' in ");
+            Console.ReadKey();
+            return;
+        }
+
+        var instance = Activator.CreateInstance(type);
+        if (instance is IAdventCalendarProblem solver)
+        {
+            solver.Solve();
             Console.ReadKey();
         }
     }

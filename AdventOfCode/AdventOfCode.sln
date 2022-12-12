@@ -5,9 +5,15 @@ VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventOfCode-2021", "AdventOfCode-2021\AdventOfCode-2021.csproj", "{0D817DFB-70D9-4A9D-BD13-633A20A4C43F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode-2022", "AdventOfCode-2022\AdventOfCode-2022.csproj", "{2A962B1E-8729-40CC-9124-B79E0DA1CC98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventOfCode-2022", "AdventOfCode-2022\AdventOfCode-2022.csproj", "{2A962B1E-8729-40CC-9124-B79E0DA1CC98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode-Helper", "AdventOfCode-Helper\AdventOfCode-Helper.csproj", "{2325D3FC-D727-4822-9C68-23849531AC88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventOfCode-Helper", "AdventOfCode-Helper\AdventOfCode-Helper.csproj", "{2325D3FC-D727-4822-9C68-23849531AC88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures", "DataStructures\DataStructures.csproj", "{E47091BD-2CA4-43B4-9EBB-9BB9148C3055}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoarLinq", "MoarLinq\MoarLinq.csproj", "{1B244553-DEFA-46CC-981C-D698D62BB45C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms", "Algorithms\Algorithms.csproj", "{60EBB11A-D589-4945-9972-654389F43B53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +33,18 @@ Global
 		{2325D3FC-D727-4822-9C68-23849531AC88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2325D3FC-D727-4822-9C68-23849531AC88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2325D3FC-D727-4822-9C68-23849531AC88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E47091BD-2CA4-43B4-9EBB-9BB9148C3055}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E47091BD-2CA4-43B4-9EBB-9BB9148C3055}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E47091BD-2CA4-43B4-9EBB-9BB9148C3055}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E47091BD-2CA4-43B4-9EBB-9BB9148C3055}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B244553-DEFA-46CC-981C-D698D62BB45C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B244553-DEFA-46CC-981C-D698D62BB45C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B244553-DEFA-46CC-981C-D698D62BB45C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B244553-DEFA-46CC-981C-D698D62BB45C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60EBB11A-D589-4945-9972-654389F43B53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60EBB11A-D589-4945-9972-654389F43B53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60EBB11A-D589-4945-9972-654389F43B53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60EBB11A-D589-4945-9972-654389F43B53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,7 +3,6 @@ using System.Text.RegularExpressions;
 
 namespace AdventOfCode_2021.Day05
 {
-    //install VS2022 and .NET 5+ and use record you lazy bum...
     public class Coordinate : IEquatable<Coordinate>
     {
         public int X { get; }
@@ -35,7 +34,7 @@ namespace AdventOfCode_2021.Day05
         }
     }
 
-    public class Day05 : AdventCalendarSolver
+    public class Day05 : AdventCalendarProblem<long>
     {
         protected override long Part1SampleResult => 5;
         protected override long SolvePart1(string[] input)

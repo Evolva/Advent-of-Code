@@ -1,6 +1,6 @@
 ﻿namespace AdventOfCode_2021.Day12
 {
-    public class Day12 : AdventCalendarSolver
+    public class Day12 : AdventCalendarProblem<long>
     {
         public class CaveMap
         {

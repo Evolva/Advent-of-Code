@@ -3,8 +3,6 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace AdventOfCode_2021.Day09
 {
-    // rewrote another coordinate because I forgot I made one day05
-    // I should still install VS2022 and .NET 5+ and use record...
     [DebuggerDisplay("I: {I}, J: {J}")]
     public class Coord : IEquatable<Coord>
     {
@@ -40,7 +38,7 @@ namespace AdventOfCode_2021.Day09
         }
     }
 
-    public class Day09 : AdventCalendarSolver
+    public class Day09 : AdventCalendarProblem<long>
     {
         private static Coord[] NeighborsOffsetToCheck = new[]
         {

@@ -2,53 +2,12 @@
 
 namespace AdventOfCode_2021.Day14
 {
-    public class Day14 : AdventCalendarSolver
+    public class Day14 : AdventCalendarProblem<long>
     {
         protected override long Part1SampleResult => 1588;
         protected override long SolvePart1(string[] input)
         {
             return NoMoreBruteForceSolver(input, 10);
-
-            //var polymerTemplate = input[0];
-            //var insertionRules = new Dictionary<string, string>();
-            //
-            //for (var line = 2; line < input.Length; line++)
-            //{
-            //    var rule = input[line];
-            //    var split = rule.Split("->", StringSplitOptions.RemoveEmptyEntries);
-            //
-            //    var elements = split[0].Trim();
-            //    var insert = split[1].Trim();
-            //    var produce = insert + elements[1];
-            //
-            //    insertionRules[elements] = produce;
-            //}
-            //
-            //for (var step = 1; step <= 10; step++)
-            //{
-            //    var polymerBuilder = new StringBuilder();
-            //
-            //    var first = true;
-            //    foreach (var pair in polymerTemplate.Pairwise())
-            //    {
-            //        if (first)
-            //        {
-            //            first = false;
-            //            polymerBuilder.Append(pair.Item1);
-            //        }
-            //
-            //        string elements = string.Empty + pair.Item1 + pair.Item2;
-            //
-            //        polymerBuilder.Append(insertionRules[elements]);
-            //    }
-            //    polymerTemplate = polymerBuilder.ToString();
-            //}
-            //
-            //var occurence = polymerTemplate.CountBy(x => x);
-            //var maxOccurence = occurence.Values.Max();
-            //var minOccurence = occurence.Values.Min();
-            //
-            //return maxOccurence - minOccurence;
         }
 
         protected override long Part2SampleResult => 2_188_189_693_529;
@@ -155,29 +114,5 @@ namespace AdventOfCode_2021.Day14
 
             return maxOccurence - minOccurence;
         }
-    }
-}
-
-public static class EnumerableExtensions
-{
-    public static Dictionary<V, long> CountBy<T, V>(this IEnumerable<T> source, Func<T, V> selector)
-    {
-        var result = new Dictionary<V, long>();
-
-        foreach (var elt in source)
-        {
-            var key = selector(elt);
-
-            if (result.TryGetValue(key, out var count))
-            {
-                result[key] = count + 1;
-            }
-            else
-            {
-                result[key] = 1;
-            }
-        }
-
-        return result;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace AdventOfCode_2022.Day02
 {
-    public class Day02 : AdventCalendarSolver
+    public class Day02 : AdventCalendarProblem<long>
     {
         private enum HandShape
         {

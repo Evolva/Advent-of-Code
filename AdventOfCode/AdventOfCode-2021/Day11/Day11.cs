@@ -2,7 +2,7 @@
 {
 
 
-    public class Day11 : AdventCalendarSolver
+    public class Day11 : AdventCalendarProblem<long>
     {
         private static IReadOnlyList<(int di, int dj)> FlashRange = new List<(int, int)>
         {

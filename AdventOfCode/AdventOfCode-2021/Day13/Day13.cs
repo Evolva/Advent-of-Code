@@ -100,7 +100,7 @@ namespace AdventOfCode_2021.Day13
         }
     }
 
-    public class Day13 : AdventCalendarSolver
+    public class Day13 : AdventCalendarProblem<long>
     {
         protected override long Part1SampleResult => 17;
         protected override long SolvePart1(string[] input)

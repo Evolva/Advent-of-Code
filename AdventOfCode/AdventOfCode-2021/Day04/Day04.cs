@@ -110,7 +110,7 @@
         }
     }
 
-    public class Day04 : AdventCalendarSolver
+    public class Day04 : AdventCalendarProblem<long>
     {
         protected override long Part1SampleResult => 4512;
         protected override long SolvePart1(string[] input)
